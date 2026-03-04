@@ -1,0 +1,23 @@
+#tv-ai-prediction-badge {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 999999;
+  background: #131722;
+  color: #f5f7fa;
+  border: 1px solid #3a4559;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+#tv-ai-prediction-badge[data-state="error"] {
+  border-color: #e74c3c;
+  color: #ffd2cd;
+}
+
+#tv-ai-prediction-badge[data-state="ok"] {
+  border-color: #2ecc71;
+}

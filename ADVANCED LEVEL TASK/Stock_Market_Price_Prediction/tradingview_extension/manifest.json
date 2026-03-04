@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "TradingView AI Predictor Overlay",
+  "version": "1.0.0",
+  "description": "Shows next-day AI prediction from your local stock model API on TradingView charts.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.tradingview.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
